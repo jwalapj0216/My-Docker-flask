@@ -1,0 +1,7 @@
+version: "3.8"
+services :
+    web:
+        build: .
+        container_name: jwala-basic-details
+        ports:
+            - "8080:8000"
