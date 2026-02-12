@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: jwalapj/custom-nginx:v1
+    container_name: custom-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/var/opt/nginx
+    restart: always
